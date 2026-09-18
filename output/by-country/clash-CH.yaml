@@ -13,19 +13,24 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 104.165.205.42
-  port: 8443
+  server: 94.26.35.139
+  port: 25720
   udp: true
-  type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: 104.165.205.42
-  skip-cert-verify: true
+  type: vless
+  uuid: be83425f-74c5-4b03-9c4b-20aa16322698
+  tls: true
+  reality-opts:
+    public-key: OueudVX2rTpyeEb2bNW3Jx3WtgSX4zFERs6yt8Szv0E
+    short-id: fddf99d4a4f55a48
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

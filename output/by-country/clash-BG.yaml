@@ -6,15 +6,25 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   server: 192.145.31.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  server: 192.145.31.5
   port: 8443
   udp: true
   type: vless
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
   servername: neth9.lunariai.ru
-  skip-cert-verify: true
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 144.31.50.236
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  server: prep.wwwinternetvideo.click
   port: 443
   udp: true
   type: vless
@@ -25,7 +35,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
 rules:
 - MATCH,PROXIES
