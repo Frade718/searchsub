@@ -63,6 +63,10 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
+    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity",
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt",
+    "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt",
+    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
 ]
 
 OUTPUT_DIR = "output"
