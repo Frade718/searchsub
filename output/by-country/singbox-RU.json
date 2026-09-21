@@ -6,13 +6,13 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "193.181.216.117",
-      "server_port": 2053,
+      "server": "157.228.142.148",
+      "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,6 +20,7 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/act/rank/lang?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -34,7 +35,7 @@
       "tls": {
         "enabled": true,
         "server_name": "itsallproxy.quattro-tech.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
