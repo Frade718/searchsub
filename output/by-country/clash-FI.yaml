@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 62.238.103.54
-  port: 2083
+  server: 193.23.201.65
+  port: 5432
   udp: true
   type: vless
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 2.27.175.71
   port: 443
@@ -39,12 +37,17 @@ proxies:
   sni: iq5ny.pleiades.codes
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: p1tun3.greewebservices.ir
-  port: 2070
+  server: 62.60.229.124
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ao5znrhEwVqoJy-l7AVvgw
+  type: vless
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts
+  servername: finland.b2ai.top
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
