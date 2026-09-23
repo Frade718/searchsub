@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -27,7 +27,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
