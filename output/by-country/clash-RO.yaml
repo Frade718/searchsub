@@ -13,7 +13,7 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 85.204.107.183
+  server: 85.204.107.185
   port: 8443
   udp: true
   type: hysteria2
@@ -34,14 +34,6 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   server: 46.28.67.55
   port: 443
   udp: true
@@ -54,6 +46,14 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: google.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
