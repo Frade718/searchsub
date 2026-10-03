@@ -5,16 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "cdn.zoom.us",
-      "server_port": 80,
-      "uuid": "1eaed465-d720-400b-9f9f-439600a2d093",
+      "tag": "🇦🇱 AL 01 - xiaohe",
+      "server": "lv1.rovilo.ir",
+      "server_port": 2095,
+      "uuid": "452f869f-7720-47c3-a175-b6673e31d3e8",
       "transport": {
-        "type": "ws",
+        "type": "httpupgrade",
         "path": "/",
-        "headers": {
-          "Host": "cloud.ghostdev.lk"
-        }
+        "host": "connectivitycheck.android.com"
       }
     },
     {
@@ -22,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
