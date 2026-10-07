@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
-  port: 443
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: trojan
-  password: pjg&JybcgFsca,+gQMa
-  sni: 022xW1dMCzG0c6165PCla6.TOMBorn69.woRKERS.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/9Krhh8DnN4WBkbQFAyN09f7V7ivKQ?ed=2560
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 45.9.118.101
   port: 443
@@ -28,38 +24,21 @@ proxies:
   servername: sellflow.org
   client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 194.87.68.140
-  port: 10771
+  server: 91.196.32.163
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: germany3.h2corp.local
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 176.32.39.52
-  port: 10550
+  server: 103.88.243.142
+  port: 11592
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,8 +48,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,7 +57,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
