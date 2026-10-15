@@ -18,7 +18,7 @@ proxies:
   servername: www.bing.com
   client-fingerprint: qq
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  server: 45.158.185.172
+  server: z5n1.vpnpolar.online
   port: 443
   udp: true
   type: vless
