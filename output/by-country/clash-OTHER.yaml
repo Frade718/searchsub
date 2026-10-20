@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.64.229.21
+  server: cf.877771.xyz
   port: 443
   udp: true
   type: vmess
@@ -21,37 +21,16 @@ proxies:
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 172.64.229.21
+  server: 108.162.194.134
   port: 443
   udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: cf.0sm.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +45,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
 rules:
 - MATCH,PROXIES
