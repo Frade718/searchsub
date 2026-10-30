@@ -16,20 +16,22 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.52.187
-  port: 443
+  server: 65.109.211.81
+  port: 465
   udp: true
   type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   tls: true
-  servername: b.fi-1.bnc-gt.co.uk
+  servername: hw6.divarkhaghazi.com.
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: hw3.divarkhaghazi.com
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -41,20 +43,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 196.196.204.174
-  port: 443
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
-    short-id: 2892e611785bafd1
-  servername: 263651t.fi3.h1clayd.click
-  client-fingerprint: edge
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
