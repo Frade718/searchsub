@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "93.152.223.244",
+      "server": "195.123.226.21",
       "server_port": 443,
-      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
+      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ddk5-ger.newagetechnologies.live",
+        "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8",
-          "short_id": ""
+          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
+          "short_id": "77bb0d07bddbc832"
         }
       }
     },
