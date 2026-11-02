@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 160.187.100.109
+  server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: ench-snet-app.w-ctrip.cn
@@ -21,28 +21,12 @@ proxies:
   sni: cm.g.doubleclick.net
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: ench-snet-app.w-ctrip.cn
-  port: 45502
+  server: vpn-tw-002.fastervpn.world
+  port: 443
   udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: ench-snet-app.w-ctrip.cn
-  port: 22003
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: ench-snet-app.w-ctrip.cn
-  port: 47786
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -52,8 +36,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,7 +44,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
