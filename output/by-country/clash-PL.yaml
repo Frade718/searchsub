@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -14,27 +22,6 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 94.183.234.245
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
