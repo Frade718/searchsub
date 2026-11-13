@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "88.80.150.15",
+      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe",
+      "server": "95.143.188.113",
       "server_port": 443,
-      "uuid": "1d46250c-f015-439d-a7fd-c4d9e2a4c63d",
+      "uuid": "367d74e7-0204-4b92-ba57-ae31344dce7f",
       "tls": {
         "enabled": true,
-        "server_name": "bg2.oncloudvpn.com",
+        "server_name": "ar5v3uc2o9.j.cloudfront.hls.hlsnode.net",
         "insecure": false,
         "alpn": [
           "h2"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "grpc"
+        "service_name": "sync.v1"
       }
     },
     {
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
