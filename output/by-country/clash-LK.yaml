@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 波兰 (Poland) 01 (家宽) - xiaohe
-  server: 185.86.145.55
-  port: 10470
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  server: 170.114.45.6
+  port: 2096
   udp: true
   type: vless
-  uuid: 3ecbd833-40d8-4ddb-b80b-a7c4628ec7e5
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   tls: true
-  servername: wn-pl4.static-s3.org
+  servername: pcloud.z-tas.com
   skip-cert-verify: false
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: wn-adaptcloud
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pcloud.z-tas.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 波兰 (Poland) 01 (家宽) - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 (Poland) 01 (家宽) - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
 rules:
 - MATCH,PROXIES
