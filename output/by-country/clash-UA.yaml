@@ -4,32 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 382218.xyz
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  server: 31.222.235.81
   port: 443
   udp: true
   type: vless
-  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   tls: true
-  servername: 382218.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+    short-id: d8b58872
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 382218.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 rules:
 - MATCH,PROXIES
