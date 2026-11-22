@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "217.30.10.70",
-      "server_port": 9057,
+      "server_port": 9044,
       "method": "aes-256-cfb",
-      "password": "wjTugX3ZtHMB9c3Z"
+      "password": "KBGjZYcy4SyRShmA"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "217.30.10.70",
-      "server_port": 9044,
+      "server_port": 9057,
       "method": "aes-256-cfb",
-      "password": "KBGjZYcy4SyRShmA"
+      "password": "wjTugX3ZtHMB9c3Z"
     },
     {
       "type": "selector",

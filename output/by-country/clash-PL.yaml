@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.70
-  port: 9057
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: wjTugX3ZtHMB9c3Z
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 217.30.10.70
   port: 9044
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: KBGjZYcy4SyRShmA
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 217.30.10.70
+  port: 9057
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: wjTugX3ZtHMB9c3Z
 proxy-groups:
 - name: PROXIES
   type: select
