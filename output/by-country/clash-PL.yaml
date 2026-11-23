@@ -6,26 +6,19 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.70
-  port: 9020
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BNmAXXxAHYpTRdzu
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 217.30.10.70
   port: 9057
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: wjTugX3ZtHMB9c3Z
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 217.30.10.70
-  port: 9018
+  port: 9020
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: fG2artUmHfNT2cX7
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  password: BNmAXXxAHYpTRdzu
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 191.217.253.12
   port: 443
   udp: true
@@ -38,7 +31,7 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: 191.217.253.12
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 45.194.66.177
   port: 443
   udp: true
@@ -49,6 +42,19 @@ proxies:
   servername: 31tawwo0.virtual-network.lol
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 144.31.1.172
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: harbortarget.newbuzideas.org
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
