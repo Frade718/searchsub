@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.70
-  port: 9059
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 217.30.10.70
   port: 9037
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: TN2YqghxeFDKZfLU
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 217.30.10.70
+  port: 9084
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: c3NtHJ5ujV2tGDfj
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 217.30.10.70
   port: 9040
@@ -27,53 +27,28 @@ proxies:
   password: p9z5BVADH2YFs3MN
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 217.30.10.70
-  port: 9020
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BNmAXXxAHYpTRdzu
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 217.30.10.70
-  port: 9088
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: f8npKgNzdkss2ytn
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 217.30.10.70
   port: 9018
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: fG2artUmHfNT2cX7
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 217.30.10.70
-  port: 9084
+  port: 9059
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: c3NtHJ5ujV2tGDfj
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 217.30.10.70
-  port: 9098
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 92.63.189.39
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
-  server: 217.30.10.70
-  port: 9057
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: wjTugX3ZtHMB9c3Z
-- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
-  server: 217.30.10.70
-  port: 9044
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: KBGjZYcy4SyRShmA
+  type: vless
+  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: avelon.onl
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,10 +60,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
-  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,9 +71,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
-  - 🇵🇱 波兰 (Poland) 08 - xiaohe
-  - 🇵🇱 波兰 (Poland) 09 - xiaohe
-  - 🇵🇱 波兰 (Poland) 10 - xiaohe
 rules:
 - MATCH,PROXIES
